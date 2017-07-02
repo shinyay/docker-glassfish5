@@ -5,7 +5,8 @@ MAINTAINER shinyay <shinya.com@gmail.com>
 
 # Set environment variables and default password for user 'admin'
 ENV GLASSFISH_PKG=glassfish-5.0-b10-06_23_2017.zip \
-    GLASSFISH_URL=http://download.oracle.com/glassfish/5.0/nightly/glassfish-5.0-b10-06_23_2017.zip \
+    GLASSFISH_URL=http://download.oracle.com/glassfish/5.0/nightly/${GLASSFISH_PKG} \
+    #GLASSFISH_URL=http://download.oracle.com/glassfish/5.0/nightly/glassfish-5.0-b10-06_23_2017.zip \
     GLASSFISH_HOME=/glassfish5 \
     PATH=$PATH:/glassfish5/bin \
     PASSWORD=glassfish
