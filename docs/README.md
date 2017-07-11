@@ -60,6 +60,8 @@ Docker Hub の **Build Details** タブにDockefileからのビルド結果が�
 
 - https://hub.docker.com/r/shinya/docker-glassfish5/builds/
 
+![](images/docker-glassfish02.png)
+
 ### 管理コンソール (Glassfish Console) へのアクセス
 上記のDocker の起動コマンドのオプションで、以下のパラメータを追加していました、
 
