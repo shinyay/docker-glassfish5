@@ -13,7 +13,7 @@ ENV GLASSFISH_PKG=glassfish-5.0-b10.zip \
 # Install packages, download and extract GlassFish
 # Setup password file
 # Enable DAS
-RUN yum install -y wget unzip && \
+RUN yum install -y wget unzip lsof && \
     wget --no-check-certificate ${GLASSFISH_URL}/${GLASSFISH_PKG} && \
     unzip -o ${GLASSFISH_PKG} && \
     rm -f ${GLASSFISH_PKG} && \
