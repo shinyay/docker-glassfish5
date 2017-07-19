@@ -33,32 +33,32 @@ Glassfish5 は Java EE 8 の参照実装となっていて、その Java EE 8 �
 
 ### Docer Image の取得 (`docker pull`)
 
-`docker pull shinya/docker-glassfish5`
+`docker pull shinyay/docker-glassfish5`
 
 Docker Hub の以下に登録している Docker Image を取得します
-https://hub.docker.com/r/shinya/docker-glassfish5/
+https://hub.docker.com/r/shinyay/docker-glassfish5/
 
 ### Docker Container の起動 (`docker run`)
 
 #### 最新のバージョン
-`docker run -d -it --rm -p 4848:4848 shinya/docker-glassfish5`
+`docker run -d -it --rm -p 4848:4848 shinyay/docker-glassfish5`
 
 タグをつけない場合は、`latest` が起動します。このタグの実体は、Nightly Build の最新版になるようにビルドしています。
 
 #### Promoted ビルド
-`docker run shinya/docker-glassfish5:<ビルドバージョン>`
+`docker run shinyay/docker-glassfish5:<ビルドバージョン>`
 
-たとえば、`docker run shinya/docker-glassfish5:b10` とすると、一連のテストケースをクリアした安定しているビルドの **Promoted Build** のイメージを起動します。
+たとえば、`docker run shinyay/docker-glassfish5:b10` とすると、一連のテストケースをクリアした安定しているビルドの **Promoted Build** のイメージを起動します。
 
 #### Nightly ビルド
-`docker run shinya/docker-glassfish5:<ビルドバージョン>-MM_DD_YYYY`
+`docker run shinyay/docker-glassfish5:<ビルドバージョン>-MM_DD_YYYY`
 
-たとえば、`docker run shinya/docker-glassfish5:b10-07_04_2017` とすると、簡易的なテストケースのみをクリアしたビルドの **Nightly Build** のイメージが起動します。
+たとえば、`docker run shinyay/docker-glassfish5:b10-07_04_2017` とすると、簡易的なテストケースのみをクリアしたビルドの **Nightly Build** のイメージが起動します。
 
 #### ビルドバージョンの確認
 Docker Hub の **Build Details** タブにDockefileからのビルド結果が一覧表示されています。以下のURLで確認できます:
 
-- https://hub.docker.com/r/shinya/docker-glassfish5/builds/
+- https://hub.docker.com/r/shinyay/docker-glassfish5/builds/
 
 ![](images/docker-glassfish02.png)
 

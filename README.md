@@ -16,6 +16,7 @@ This Dockerfile enables you to get a Glassfish5 build archive, install it and ru
 
 - Two types of build
   - [Nightly](http://download.oracle.com/glassfish/5.0/nightly/)
+    - [latest](http://download.oracle.com/glassfish/5.0/nightly/)
   - [Promoted](http://download.oracle.com/glassfish/5.0/promoted)
 - Based on Oracle Java
   - [Oracle Java 8 SE (Server JRE)](https://store.docker.com/images/oracle-serverjre-8)
@@ -28,12 +29,12 @@ This Dockerfile enables you to get a Glassfish5 build archive, install it and ru
 
 ## Usage
 
-`docker pull shinya/docker-glassfish5`
+`docker pull shinyay/docker-glassfish5`
 
 ## Installation
 
 ### Startup
-`docker run -it --rm -p 4848:4848 shinya/docker-glassfish5`
+`docker run -it --rm -p 4848:4848 shinyay/docker-glassfish5`
 
 ### Access Glassfish Concole
 Glassfish Console: http://localhost:4848

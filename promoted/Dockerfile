@@ -27,8 +27,7 @@ RUN yum install -y wget unzip lsof && \
     asadmin start-domain && \
     echo "AS_ADMIN_PASSWORD=${PASSWORD}" > /tmp/gfpassword && \
     asadmin --user=admin --passwordfile=/tmp/gfpassword enable-secure-admin && \
-    asadmin --user=admin stop-domain && \
-    rm /tmp/gfpassword
+    asadmin --user=admin stop-domain
 
 # Ports being exposed
 EXPOSE 4848 8080 8181
