@@ -13,7 +13,7 @@ ENV GLASSFISH_PKG=latest-glassfish.zip \
 # Install packages, download and extract GlassFish
 # Setup password file
 # Enable DAS
-RUN yum install -y wget unzip lsof && \
+RUN yum install -y wget unzip && \
     wget --no-check-certificate ${GLASSFISH_URL}/${GLASSFISH_PKG} && \
     unzip -o ${GLASSFISH_PKG} && \
     rm -f ${GLASSFISH_PKG} && \
