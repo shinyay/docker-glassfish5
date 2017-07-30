@@ -4,7 +4,7 @@ FROM store/oracle/serverjre:8
 MAINTAINER shinyay <shinya.com@gmail.com>
 
 # Set environment variables and default password for user 'admin'
-ENV GLASSFISH_PKG=glassfish-5.0-b12-07_17_2017.zip \
+ENV GLASSFISH_PKG=glassfish-5.0-b16-07_30_2017.zip \
     GLASSFISH_URL=http://download.oracle.com/glassfish/5.0/nightly \
     GLASSFISH_HOME=/glassfish5 \
     PATH=$PATH:/glassfish5/bin \
@@ -13,7 +13,7 @@ ENV GLASSFISH_PKG=glassfish-5.0-b12-07_17_2017.zip \
 # Install packages, download and extract GlassFish
 # Setup password file
 # Enable DAS
-RUN yum install -y wget unzip lsof && \
+RUN yum install -y wget unzip && \
     wget --no-check-certificate ${GLASSFISH_URL}/${GLASSFISH_PKG} && \
     unzip -o ${GLASSFISH_PKG} && \
     rm -f ${GLASSFISH_PKG} && \
